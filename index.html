@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+ 
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="brand">Abdul<span>Harish</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#about" class="active">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about">
+      <div class="home-inner">
+        <div class="home-content animate-on-scroll">
+          <h1>Hi, I'm <span class="name-highlight">Abdul Harish</span></h1>
+          <h3>Full Stack Developer</h3>
+          <p>
+            I am a Python Full Stack Developer with experience in building end-to-end web applications using Django/Flask
+            for backend and React/Angular for frontend. I specialize in creating scalable APIs, designing user-friendly
+            interfaces, and managing databases. Passionate about problem-solving, I focus on
+            writing clean, maintainable code.
+          </p>
+          <div class="home-buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/abdul-harish-456815280/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B3%2BnoaxW2Qxqdlr9%2Brw2%2Flg%3D%3D" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/qr/GPNLVVR62HVBC1" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="home-img animate-on-scroll">
+          <img src="./image/Abdul img.png" alt="Abdul Harish Portrait">
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="cards-container">
+            <div class="card animate-on-scroll">
+                <p class="card-title-visible">Web Development</p>
+                <div class="card-content">
+                    <h3>Web Development</h3>
+                    <p>As a Frontend Developer, I specialize in creating responsive, user-friendly, and visually appealing web interfaces.</p>
+                </div>
+            </div>
+            <div class="card animate-on-scroll">
+                <p class="card-title-visible">Backend Developer</p>
+                <div class="card-content">
+                    <h3>Backend Development</h3>
+                    <p>I build secure, scalable, and efficient server-side applications with expertise in Python (Django/Flask) and database management.</p>
+                </div>
+            </div>
+            <div class="card animate-on-scroll">
+                <p class="card-title-visible">Full Stack Developer</p>
+                <div class="card-content">
+                    <h3>Full Stack Developer</h3>
+                    <p>I build end-to-end web applications using Django/Flask for the backend and modern frontend frameworks like React/Angular.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="cards-container">
+          <div class="card card--project card--project-1 animate-on-scroll">
+              <p class="card-title-visible">College Website</p>
+              <div class="card-content">
+                  <h3>College Website</h3>
+                  <p>A dynamic and responsive college website built with HTML, CSS, and JavaScript, featuring an intuitive UI and accessible design.</p>
+              </div>
+          </div>
+          <div class="card card--project card--project-2 animate-on-scroll">
+              <p class="card-title-visible">Weather Report</p>
+              <div class="card-content">
+                  <h3>Weather Report Dashboard</h3>
+                  <p>A real-time weather dashboard using APIs to fetch and display weather data with a clean, user-friendly interface.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-card animate-on-scroll" id="contact-card">
+            <p>Interested in working together?</p>
+            <button class="btn" id="show-form-btn">Let's Talk</button>
+        </div>
+        <div class="contact-form-container" id="contact-form-container">
+            <form action="#" class="contact-form">
+                <input required class="input" type="text" name="name" placeholder="Full Name">
+                <input required class="input" type="email" name="email" placeholder="E-mail Address">
+                <input required class="input" type="text" name="subject" placeholder="Email Subject">
+                <input required class="input" type="tel" name="phone" placeholder="Phone Number">
+                <textarea required name="message" placeholder="Your Message" class="input textarea"></textarea>
+                <input class="submit-button btn" type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+  </main>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
+
